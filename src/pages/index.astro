@@ -11,18 +11,16 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
-	<body class="bg-neutral-100 dark:bg-neutral-950 dark:text-neutral-100 flex flex-col items-center px-8">
-		<header class="flex flex-row items-center space-x-3 w-full md:max-w-xl mt-60 mb-10">
+	<body class="h-screen bg-neutral-100 dark:bg-neutral-950 dark:text-neutral-100 flex flex-col justify-center items-center px-8">
+		<header class="flex flex-row items-center space-x-3 w-full md:max-w-xl mb-10">
 			<Logo />
 			<span class="font-bold text-xl">Athen Lab</span>
 		</header>
-		<main class="flex flex-col flex-1 w-full md:max-w-xl text-xl space-y-4">
-			<p>Athen Lab is an independent lab that conducts open-source machine learning research.</p>
+		<main class="flex flex-col w-full md:max-w-xl text-xl space-y-4">
+			<p>Athen Lab is an independent machine learning research lab. We believe that AI should be open source and widely available.</p>
 			<p>The current research is to build a state-of-the-art AI image detector.</p>
-			<p><a class="underline" href="https://x.com/kennethnym">Find me on x.com</a> to follow the research.<p>
+			<hr class="opacity-50" />
+			<p class="text-xs opacity-50">Founded by <a class="underline" href="https://kennethnym.com">Kenneth</a>. Find me on <a class="underline" href="https://x.com/kennethnym">x.com</a>.</p>
 		</main>
-		<footer class="absolute bottom-0 left-0 right-0 flex items-center justify-center opacity-20 mb-10">
-			<p class="text-xs">Created by <a class="underline" href="https://kennethnym.com">kennethnmym</a></p>
-		</footer>
 	</body>
 </html>
